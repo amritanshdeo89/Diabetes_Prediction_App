@@ -1,0 +1,109 @@
+body {
+  height: 100%;
+  font-family: Open Sans;
+}
+body {
+text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.form {
+
+    input {
+      width: 100%;
+      height: 48px;
+      color: hsl(0, 0, 20);
+      padding: 15px 40px 15px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+      outline: none!important;
+      border: 1px solid hsla(0, 0, 0, 0.3);
+      box-shadow: inset 0 1px 4px hsla(0, 0, 0, 0.2);
+      vertical-align: top;
+    }
+
+  }
+.container{
+padding: 30px;
+position: relative;
+background: hsl(86, 85%, 95%);
+background-size: 500% 500%;
+}
+/* Text Area */
+.ml-container{
+    margin: 45px 0;
+	flex: 1 0 auto;
+
+}
+.container-heading{
+    margin: 0;
+}
+
+.heading_font{
+	font-size: 35px;
+	font-weight: normal;
+}
+
+.form-input {
+	text-align: center;
+	width: 350px;
+	height: 25px;
+	margin-bottom: 5px;
+}
+
+/* Predict Button */
+.my-cta-button{
+	background: hsl(86, 76%, 71%);
+    border-radius: 5px;
+    box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0), 0 3px 3px hsla(0, 0, 0, .2);
+	margin-top: 10px;
+    padding: 10px 36px;
+   color: hsl(0, 0, 100);
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.my-cta-button:hover{
+    background: hsla(0, 0, 0, 0.1);
+    box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0.2);
+}
+
+.my-cta-button:active{
+    box-shadow: 0 0;
+}
+
+.footer{
+	flex-shrink: 0;
+	position: relative;
+	padding: 20px;
+	background: hsl(86, 85%, 95%);
+    background-size: 500% 500%;
+    margin-top:60px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+   width: 100%;
+   text-align: center;
+}
+
+
+/* Result */
+.results{
+    padding: 30px 0 0;
+	flex: 1 0 auto;
+	margin: 30px 0;
+
+}
+
+.danger{
+    color: #ff0000;
+}
+
+.safe{
+    color: green;
+}

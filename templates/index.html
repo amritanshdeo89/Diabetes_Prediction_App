@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Diabetes Predictor</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Diabetes Predictor</span></h2>
+            <br/>
+            <div class='description'>
+    			<p>Unhealthy eating habits cause major health problems.</p>
+    		</div>
+    	</div>
+
+        <!-- Text Area -->
+    	<div class="ml-container">
+    		<form action="/predict" method="POST">
+                <input class="form-input" type="text" name="pregnancies" placeholder="Number of Pregnancies eg. 0" required><br>
+                <input class="form-input" type="text" name="glucose" placeholder="Glucose (mg/dL) eg. 80" required><br>
+                <input class="form-input" type="text" name="bloodpressure" placeholder="Blood Pressure (mmHg) eg. 80" required><br>
+                <input class="form-input" type="text" name="skinthickness" placeholder="Skin Thickness (mm) eg. 20" required><br>
+                <input class="form-input" type="text" name="insulin" placeholder="Insulin Level (IU/mL) eg. 80" required><br>
+                <input class="form-input" type="text" name="bmi" placeholder="Body Mass Index (kg/m²) eg. 23.1" required><br>
+                <input class="form-input" type="text" name="dpf" placeholder="Diabetes Pedigree Function eg. 0.52" required><br>
+                <input class="form-input" type="text" name="age" placeholder="Age (years) eg. 34" required><br>
+
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+    	</div>
+    <div class='footer'>
+           <p class='footer-description'>Created by Amritansh Deo.</p>
+    </div>
+
+
+    </body>
+</html>
